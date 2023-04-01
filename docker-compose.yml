@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  fandootoken:
+    build: .
+    image: fandootoken-app
+    container_name: fandootoken-app
+    restart: always
+    networks:
+      - mytestnet
+
+networks:
+  mytestnet:
+    external: true
